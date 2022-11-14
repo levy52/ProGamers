@@ -1,5 +1,5 @@
 AOS.init({
 	startEvent: 'DOMContentLoaded',
-    offset: 200,
-    once: true
+	offset: 200,
+	once: true,
 })

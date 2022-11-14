@@ -139,10 +139,6 @@ header {
 		font-size: 14px;
 	}
 
-	.aboutus-hover {
-		transition: color 0.3s;
-	}
-
 	.aboutus-hover:hover {
 		color: $main-color;
 	}
@@ -231,10 +227,10 @@ header {
 			font-weight: bold;
 			font-size: 30px;
 		}
-	}
 
-	.price-box:hover {
-		transform: scale(1.05);
+		&:hover {
+			transform: scale(1.05);
+		}
 	}
 
 	.price-info {
@@ -278,10 +274,10 @@ header {
 		.card-body {
 			height: 150px;
 		}
-	}
 
-	.card:hover {
-		transform: scale(0.96);
+		&:hover {
+			transform: scale(0.96);
+		}
 	}
 
 	.card-title {
@@ -359,10 +355,10 @@ header {
 				a {
 					padding: 10px;
 					color: $white;
-				}
 
-				a:hover {
-					color: $light-gray;
+					&:hover {
+						color: $light-gray;
+					}
 				}
 			}
 		}
