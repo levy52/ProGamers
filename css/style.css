@@ -312,7 +312,7 @@ header .fa-chevron-down {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.team .card .card-body {
+.team .card-body {
   height: 150px;
 }
 .team .card:hover {
@@ -356,7 +356,7 @@ header .fa-chevron-down {
 .contact .underline {
   background-color: #ddd;
 }
-.contact .contact-shadow {
+.contact-shadow {
   position: absolute;
   top: 0;
   width: 100%;
@@ -364,27 +364,27 @@ header .fa-chevron-down {
   background-color: rgba(0, 9, 27, 0.75);
   z-index: -5;
 }
-.contact .contact-us {
+.contact-us {
   display: flex;
   align-items: center;
   color: #fff;
 }
-.contact .contact-us .contact-item {
+.contact-us .contact-item {
   margin: 30px 0;
 }
-.contact .contact-us .contact-item h3 {
+.contact-us .contact-item h3 {
   margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.contact .contact-us .contact-item .social-media {
+.contact-us .contact-item .social-media {
   font-size: 26px;
 }
-.contact .contact-us .contact-item .social-media a {
+.contact-us .contact-item .social-media a {
   padding: 10px;
   color: #fff;
 }
-.contact .contact-us .contact-item .social-media a:hover {
+.contact-us .contact-item .social-media a:hover {
   color: #ddd;
 }
 
@@ -424,5 +424,38 @@ header .fa-chevron-down {
   }
   .contact {
     background-image: url("../img/contact.jpg");
+  }
+}
+@media (max-width: 991px) {
+  .collapse.navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: all 0.5s;
+  }
+  .collapse.navbar-collapse.show-nav {
+    height: 100%;
+  }
+  .collapse.navbar-collapse .closebtn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 10px;
+    font-size: 4rem;
+    color: #818181;
+    display: block;
+    transition: transform 0.3s;
+  }
+  .collapse.navbar-collapse .closebtn:hover {
+    transform: scale(1.2);
   }
 }/*# sourceMappingURL=style.css.map */
